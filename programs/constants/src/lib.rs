@@ -7,7 +7,7 @@ use anchor_lang::{
 };
 use anchor_spl::token::{self, TokenAccount};
 use crate::{constants::*, error::TokenCampaignError};
-declare_id!("651iXWmZSZhJ4qmBFtyXJNffpJuBF8B1TNQyjz5SxeTi");
+declare_id!("EMXKTs6wzep2R8DZcD5AvBUH9p3pMR61YH5f5HjWf16");
 
 #[program]
 mod token_campaign {
@@ -61,7 +61,7 @@ mod token_campaign {
         let pseudo_random_number = ((u64::from_le_bytes(
             <[u8; 8]>::try_from(&hash(&clock.unix_timestamp.to_be_bytes()).to_bytes()[..8])
                 .unwrap(),
-        ) * clock.slot)
+        ) .wrapping_mul(clock.slot))
             % u64::MAX) as u64;
 
         let winner_id = (pseudo_random_number % campaign.last_entry_id) + 1;
