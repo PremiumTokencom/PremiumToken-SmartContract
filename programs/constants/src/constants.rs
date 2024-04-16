@@ -4,7 +4,7 @@ pub const MASTER_SEED: &str = "master";
 pub const AUTOMATIC_DRAW_SEED: &str = "automatic_draw";
 pub const ENTRY_SEED: &str = "entry";
 
-pub const EXCLUDED_ADDRESSES: [Pubkey; 20] = [
+pub const EXCLUDED_ADDRESSES: [Pubkey; 30] = [
     solana_program::pubkey!("GPMjfV4LTE3tnAeVHAbGS4krJkqaDw4ydFj15e7kjJTU"),
     solana_program::pubkey!("8PEc2ivbUPdNLYjCnGDzDZufaoZiK5vmaxfThDe3nnm7"),
     solana_program::pubkey!("3H5PtuLf6oj4syACUjtX8Q86LhWxZ4hQbC5nDeBGDQbj"),
@@ -25,4 +25,15 @@ pub const EXCLUDED_ADDRESSES: [Pubkey; 20] = [
     solana_program::pubkey!("DSNXQ1Nt4mNwPx4RWUEKNwFoneZn9oSokcgeN9RA2oYH"),
     solana_program::pubkey!("HnQ4TCJhttL33TtqSQKDwMi6qG9SuX184VBXx3agn5ur"),
     solana_program::pubkey!("CNa8eCs3HCFvGYjKsqnodGftunY6gZQtM4HcqbXGCmu6"),
+    solana_program::pubkey!("AYLuGHDVZkAt1PnHSprL2ww7G6ox4bHLRzERGe68qsji"),
+    solana_program::pubkey!("5PUwm8Jod1Ntsi7RJauWza5vd3mXQhoPaUX9i6ycMio8"),
+    solana_program::pubkey!("3nfQZE28xtUP1yBdn5hDV1ULqJ6DsBjDARmN4dXge8Xb"),
+    solana_program::pubkey!("7Y87sAsXYzxa7goqzGfyd9yW6g2MtAXoT6zXgPri4GWV"),
+    solana_program::pubkey!("FgFPtqo4T2jj11JKhErejboWC7Ae7iFVBRw7JwJuHQLA"),
+    solana_program::pubkey!("Dsmu3EGtCWgTUnTdrMN4uQoax4LWxyvkMvBfq1UysMmF"),
+    solana_program::pubkey!("C8sjE6gA7qGuXkUHZ4yJNx8H61t6BUrEyzQpVaR4Uw3g"),
+    solana_program::pubkey!("DYCUYtDGawoR5EZHzGx7CHL6iJsAgW538zjwyYyyc1SS"),
+    solana_program::pubkey!("JDdKGWgPvZjXUcvuwiha69oNHz1ghyCfgcbqxwafQgcw"),
+    solana_program::pubkey!("78kcuw4HWUotQkMSXs6i5RdET8YzPe6oxiusXKuU5ix9"),
 ];
+    
